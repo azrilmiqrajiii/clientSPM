@@ -7,7 +7,7 @@ import DashboardMahasiswa from "./pages/dashboardMhs";
 import DashboardDosen from "./pages/dashboardDosen";
 
 const router = createBrowserRouter([
-  { path: "/", element: <div>hello</div> },
+  { path: "/", element: <LoginPage /> },
   { path: "/login", element: <LoginPage /> },
   { path: "/dashboardMahasiswa", element: <DashboardMahasiswa /> },
   { path: "/dashboardDosen", element: <DashboardDosen /> },

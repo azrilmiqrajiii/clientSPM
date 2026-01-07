@@ -23,7 +23,7 @@ const DashboardDosen = () => {
   const [error, setError] = useState(null);
 
   const user = {
-    name: localStorage.getItem("name"),
+    name: JSON.parse(localStorage.getItem("name")),
     role: localStorage.getItem("role"),
   };
 
