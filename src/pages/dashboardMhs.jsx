@@ -25,9 +25,10 @@ const DashboardMahasiswa = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
+  const storedUser = JSON.parse(localStorage.getItem("user"));
   const user = {
-    name: "Azril Miqraji",
-    role: "Mahasiswa",
+    name: storedUser?.name || "-",
+    role: storedUser?.role || "-",
   };
 
   const menu = [

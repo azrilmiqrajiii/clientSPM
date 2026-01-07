@@ -22,9 +22,11 @@ const DashboardDosen = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
+  const storedUser = JSON.parse(localStorage.getItem("user"));
+
   const user = {
-    name: JSON.parse(localStorage.getItem("name")),
-    role: localStorage.getItem("role"),
+    name: storedUser?.name || "-",
+    role: storedUser?.role || "-",
   };
 
   const menu = [
